@@ -1,0 +1,16 @@
+{
+  "css.customData": [".vscode/tailwindcss.rules.json"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    ".stylelintrc": "json"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript"]
+}
