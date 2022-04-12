@@ -9,3 +9,18 @@
   outline: 0;
   box-sizing: border-box;
 }
+
+body, html {
+  background-color: #1f2937;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+
+  &:hover{
+    color:#b91c1c;
+  }
+
+}
