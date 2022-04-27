@@ -1,0 +1,25 @@
+<a [routerLink]="['/details', pokemon?.details?.name]">
+  <div class="poke-card">
+    <div class="poke-card--details">
+      <div class="poke-card--details--name">
+        <p>
+          {{ pokemon?.name }}
+        </p>
+      </div>
+      <div class="poke-card--details--types">
+        <ng-template ngFor let-type [ngForOf]="pokemon?.details?.types">
+          <p [class]="type?.type?.name">
+            {{ type?.type?.name }}
+          </p>
+        </ng-template>
+      </div>
+    </div>
+    <div class="poke-card--image">
+      <img
+        [src]="pokemon?.details?.sprites?.other?.dream_world?.front_default"
+        [alt]="pokemon?.name"
+      />
+    </div>
+  </div>
+</a>
+

@@ -1,1 +1,12 @@
-<p>home works!</p>
+<app-header></app-header>
+
+<main>
+  <app-container>
+    <div class="poke-cards">
+      <ng-template ngFor let-pokemon [ngForOf]="filteredPokemons">
+        <app-poke-card [pokemon]="pokemon"></app-poke-card>
+      </ng-template>
+    </div>
+  </app-container>
+</main>
+

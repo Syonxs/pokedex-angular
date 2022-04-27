@@ -4,9 +4,10 @@
       <div class="mr-5">
         <img src="/assets/icons/logo.svg" alt="" />
       </div>
+
       <div class="header--search-bar">
-        <input placeholder="Buscar Pokémon" />
-        <button>
+        <input placeholder="Buscar Pokémon" #input (keyup)="search(input.value)" />
+        <button type="submit">
           <img src="/assets/icons/search.svg" alt="" />
         </button>
       </div>

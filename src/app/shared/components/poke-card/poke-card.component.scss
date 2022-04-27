@@ -1,0 +1,144 @@
+@import "../../../../themes/remc.scss";
+
+:host {
+  .poke-card{
+    background-color: var(--white);
+    width: 18.125rem;
+    height: remc(157);
+    border-radius: 8px;
+    box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: 0.3);
+    padding: remc(20);
+    color:#000000;
+    position: relative;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+    transform: scale(1.05);
+
+    }
+
+    &--details {
+      &--name {
+        font-size: remc(24);
+        font-style: italic;
+        font-weight: 700;
+        color: var(--primary);
+        text-transform: capitalize;
+      }
+
+      &--types {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        p {
+          text-transform: capitalize;
+          margin-bottom: remc(5);
+          border-radius: remc(32);
+          background-color: transparent;
+          color: var(--white);
+          width: remc(65);
+          font-size: remc(12);
+          padding: remc(2);
+          text-align: center;
+          color: white;
+
+          &.grass {
+            background-color: #b0cf77;
+          }
+
+          &.poison {
+            background-color: #907fa4;
+          }
+
+          &.fire {
+            background-color: #ff7171;
+          }
+
+          &.flying {
+            background-color: #5f939a;
+          }
+
+          &.ice {
+            background-color: #a7c5eb;
+          }
+
+          &.water {
+            background-color: #34626c;
+          }
+
+          &.dragon {
+            background-color: #5eaaa8;
+          }
+
+          &.bug {
+            background-color: #3a6351;
+          }
+
+          &.electric {
+            background-color: #eec373;
+          }
+
+          &.normal {
+            background-color: #c1a3a3;
+          }
+
+          &.fairy {
+            background-color: #ee9dbb;
+          }
+
+          &.psychic {
+            background-color: #ff87ca;
+          }
+
+          &.ghost {
+            background-color: #716f81;
+          }
+
+          &.fighting {
+            background-color: #ff8888;
+          }
+
+          &.ground {
+            background-color: #876445;
+          }
+
+          &.rock {
+            background-color: #865858;
+          }
+
+          &.steel {
+            background-color: #98ddca;
+          }
+
+          &.shadow {
+            background-color: var(--primary);
+          }
+
+        }
+      }
+    }
+
+    &--image {
+      position: absolute;
+      height: remc(90);
+      width: remc(110);
+      right: remc(20);
+      bottom: remc(20);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../../../../assets/icons/poke-bg.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+
+      img {
+        width: 100%;
+        height: 100%;
+        
+      }
+
+    }
+  }
+}

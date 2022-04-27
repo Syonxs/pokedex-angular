@@ -1,0 +1,12 @@
+@import "../../../themes/remc.scss";
+
+:host {
+  .poke-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: remc(20);
+    justify-content: center;
+  }
+ 
+}
