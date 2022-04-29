@@ -1,2 +1,27 @@
-<main></main>
+<div class="pokemon">
+  <div class="pokemon--image">
+    <img [src]="pokemon[0].sprites.other.dream_world.front_default" [alt]="pokemon[0].name" />
+  </div>
+  <div class="pokemon--name">
+    <h1>{{ pokemon[0].name }}</h1>
+    <h2>{{ pokemon[1].names[0].name }}</h2>
+  </div>
+  <div class="pokemon--details">
+    <h3>Estatísticas</h3>
+    <ul>
+      <ng-template ngFor let-status [ngForOf]="pokemon[0].stats">
+        <li>
+          <app-progress-bar
+            class="progress"
+            [label1]="[status.stat.name]"
+            [label2]="[status.base_stat]"
+            [progress]="[status.base_stat]"
+          >
+          </app-progress-bar>
+        </li>
+      </ng-template>
+    </ul>
+    <a routerLink="/">Voltar</a>
+  </div>
+</div>
 

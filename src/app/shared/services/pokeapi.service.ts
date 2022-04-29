@@ -15,7 +15,7 @@ export class PokeapiService {
       tap((pokemons: any) => pokemons),
       tap((pokemons: any) => {
         pokemons.results.map((pokemon: any) => {
-          this.getPokemon(pokemon.name).subscribe((response: any) => {
+          this.getPokemon(this.endpoint, pokemon.name).subscribe((response: any) => {
             pokemon.details = response
           })
         })
@@ -23,8 +23,8 @@ export class PokeapiService {
     )
   }
 
-  public getPokemon(name: string) {
-    return this.http.get(`${this.endpoint}/${name}`)
+  public getPokemon(url: string, name: string) {
+    return this.http.get(`${url}/${name}`)
   }
 }
 

@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   --white: #ffffff;
   --primary: #262835;
-
+  --secondary: #ff5473;
 }
 
 * {
@@ -16,9 +16,10 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   background-color: #1f2937;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -26,8 +27,7 @@ a {
   text-decoration: none;
   transition: all 0.2s ease-out;
 
-  &:hover{
-    color:#b91c1c;
+  &:hover {
+    color: #b91c1c;
   }
-
 }

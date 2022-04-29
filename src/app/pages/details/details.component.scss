@@ -1,0 +1,74 @@
+@import '../../../themes/remc.scss';
+
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pokemon {
+    min-width: 50vw;
+    position: relative;
+    margin-top: remc(70);
+
+    &--image {
+      position: absolute;
+      max-width: remc(140);
+      top: remc(-50);
+      left: remc(15);
+    }
+
+    &--name {
+      position: relative;
+      right: remc(10);
+      top: remc(-50);
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      h1 {
+        font-style: italic;
+        color: var(--white);
+        font-size: remc(32);
+        text-transform: capitalize;
+      }
+
+      h2 {
+        position: absolute;
+        font-size: remc(60);
+        font-style: italic;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.2);
+        top: 0;
+      }
+    }
+
+    &--details {
+      background-color: white;
+      padding: remc(25);
+      border-radius: remc(15);
+      height: auto;
+
+      h3 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: remc(32);
+        color: var(--secondary);
+        margin-top: remc(30);
+      }
+    }
+  }
+
+  a {
+    background: var(--secondary);
+    border-radius: remc(15);
+    padding: remc(15);
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 700;
+    display: flex;
+    margin-top: remc(25);
+    justify-content: center;
+  }
+}
